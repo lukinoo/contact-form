@@ -1,56 +1,79 @@
-
-.header-photo-and-nav {
-    background: #000;
-    height: 40vh;
-    font-family: 'Poppins', sans-serif;
+html {
+    font-size: 62.5%;
 }
 
-.background-image {
-    background-image: url('../images/image.jpg');
+body {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: green;
+}
+
+.main-header {
+    margin: 0 auto;
+    max-width: 1366px;
+    width: 100%;
+}
+
+.header-img {
+    background-image: url(../images/image.png);
+    width: 100%;
+    height: 325px;
     background-position: center;
     background-size: cover;
-    opacity: 0.6;
-    position: relative;
+    background-repeat: no-repeat;
 }
 
-.header-photo-and-nav h2 {
-    position: absolute;
-    top: 125px;
-    left: 110px;
-    font-size: 40px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: bold;
+nav {
+    /* es unda wavshalo meree */
+    width: 500px;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-span {
-    font-size: 14px;
-    color: #FFFFFF;
+.title {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    margin: 0 0 2% 0;
 }
 
-.header-photo-and-nav span {
-    position: absolute;
-    top: 180px;
-    left: 110px;
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
 }
 
-#for-after-stipe::after {
-    content: '';
-    width: 2px;
-    height: 20px;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 20px 0 0;
+}
+
+.for-stripe::after {
+    content: ' ';
+    width: 1px;
+    height: 18px;
     background-color: #fff;
     position: absolute;
-    margin: 0 0 0 35%;
+    margin-left: 10px;
 }
 
-.header-photo-and-nav span:last-child {
-    left: 180px;
-    font-size: 14px;
+.map-position {
+    margin: 3% auto;
+    width: 80%;
+    max-width: 1366px
 }
 
 .map {
-    width: 80%;
-    margin: 6% auto;
+    max-width: 1366px;
+    width: 100%;
+    height: 286px;
 }
