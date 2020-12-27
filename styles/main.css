@@ -5,9 +5,8 @@ html {
 body {
     width: 100%;
     height: 100vh;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
-    background-color: rgb(140, 201, 140);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .main-header {
@@ -27,7 +26,7 @@ body {
 
 nav {
     /* es unda wavshalo meree */
-    /* width: 500px; */
+    width: 500px;
     height: 325px;
     display: flex;
     align-items: center;
@@ -89,7 +88,7 @@ nav {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    margin: 0 0 0.8% 0;
+    margin:1% 0;
 }
 
 .contact-titles h2 {
@@ -114,7 +113,7 @@ main {
 }
 
 #for-texarea {
-    resize: none;
+    /* resize: none; */
     border: 2px solid #E8E8E8;
     outline: none;
 }
@@ -123,12 +122,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 40vh;
     /* margin-top: 4%; */
+    /* es unda davamato mere media requirezeee*/
 }
 
 input[type="text"], input[type="email"] {
-    padding: 10px 30px;
+    padding: 15px 30px;
     /* sigrdze unda shevcvalo */
     width: 400px;
     outline: none;
@@ -138,7 +139,7 @@ input[type="text"], input[type="email"] {
 button {
     background-color: #5863F8;
     color: #fff;
-    padding: 10px 40px;
+    padding: 10px 163px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -149,4 +150,43 @@ button {
 
 button:hover {
     transform: scale(0.98);
+}
+
+.main-footer {
+    max-width: 1366px;
+    width: 80%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    padding: 50px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bubble {
+    width: 60px;
+    height: 60px;
+    background-color: #5863F8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h3 {
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box p {
+    color: #B1B1B1;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
