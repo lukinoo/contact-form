@@ -197,13 +197,12 @@ button:hover {
     }
     
     nav {
-    width: 500px;
+    width: 100%;
     }
     .for-second-inputs {
         margin-top: 4%;
     }
     input[type="text"], input[type="email"] {
-       /* padding: 15px 5px; */
        width: 300px;
     }
     button {
@@ -212,6 +211,10 @@ button:hover {
 }
 
 @media screen and (max-width:375px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     nav {
         width: 100%;
     }
