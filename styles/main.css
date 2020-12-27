@@ -198,6 +198,13 @@ button:hover {
     nav {
         width: 100%;
     }
+    .nav-links {
+        width: 40%;
+        flex-direction: column;
+    }
+    .for-stripe::after {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -235,4 +242,35 @@ button:hover {
     .for-stripe::after {
         display: none;
     }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav-links {
+        width: 40%;
+        flex-direction: column;
+    }
+    .for-stripe::after {
+        display: none;
+    }
+    .main-header {
+        margin: 0 auto;
+        max-width: 1366px;
+        width: 100%;
+    }
+    .for-second-inputs {
+        margin-top: 4%;
+    }
+    input[type="text"], input[type="email"] {
+       width: 200px;
+    }
+    button {
+        padding: 10px 60px;
+    } 
 }
